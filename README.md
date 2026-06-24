@@ -1,4 +1,4 @@
-# SecureKeylogger
+this ok? # SecureKeylogger
 
 A C# keylogger I made for fun. It hooks into the Windows keyboard, logs keystrokes with modifier‑combo detection, encrypts everything using **AES‑256‑GCM**, and can be controlled remotely over TCP. It also includes optional steganography (PNG LSB) and AWS S3 upload – just because I could.
 
@@ -25,30 +25,52 @@ A C# keylogger I made for fun. It hooks into the Windows keyboard, logs keystrok
 
 ### Steps
 
-# 1. Clone the repo
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+ - **1. Clone the repo**
+```bash
+ git clone https://github.com/joel15thegoat/C_sharp_Keylogger_attempt/
+```
 
-# 2. Create the project if you haven't yet
+ - **2. Create the project if you haven't yet**
+``` bash
 dotnet new console -n SecureKeylogger
 cd SecureKeylogger
+ ```
 
-# 3. Add NuGet packages
+ - **3. Add NuGet packages**
+``` bash
 dotnet add package AWSSDK.S3
 dotnet add package System.Drawing.Common
+``` 
+ - **4. Replace Program.cs with the source code from this repo**
 
-# 4. Replace Program.cs with the source code from this repo
-
-# 5. Build
+ - **5. Build**
+``` bash
 dotnet build
-
-# 6. Run
+``` 
+ - **6. Run**
+``` bash
 dotnet run
+```
+
+
+## small warning
+
+**Before you build or run this,pls change these hard coded values in the source code at will**
+
+| What | Where to find it | Why you must change it |
+|------|------------------|------------------------|
+| **Auth Token** | `_authToken = "MySecretToken123"` | Change it to a strong random string (e.g., `openssl rand -base64 32`). |
+| **Bind IP** | `IPAddress.Any` (which is `0.0.0.0`) | Change to `IPAddress.Loopback` (`127.0.0.1`) unless you specifically need remote access over a network. |
+| **Encryption Password** | `"MyStrongPassword123!"` | chande to watever password u want but i suggest u use enviromental variabels instead.
+
+> **Network Security**: The remote control traffic is sent in plaintext. i suggest u Don't run this on public Wi-Fi or untrusted networks without a VPN/SSH tunnel.
+
 ## ⚠️ Legal Warning
 
 **Use this tool only on systems you own or on which you have explicit permission to monitor.**
 - i don't take responsibility for anything you do with this
--  have fun
+- this is code that i did for my eae application 
 ## licence 
 this is published under the mit licence 
 [licence](https://mit-license.org/)
+## have fun
