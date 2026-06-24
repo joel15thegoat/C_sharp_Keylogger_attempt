@@ -1,4 +1,4 @@
- # SecureKeylogger
+ # Keylogger
 
 A C# keylogger I made for fun. It hooks into the Windows keyboard, logs keystrokes with modifier‑combo detection, encrypts everything using **AES‑256‑GCM**, and can be controlled remotely over TCP. It also includes optional steganography (PNG LSB) and AWS S3 upload
 
