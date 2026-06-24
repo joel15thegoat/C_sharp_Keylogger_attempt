@@ -65,7 +65,7 @@ dotnet run
 
 > **Network Security**: The remote control traffic is sent in plaintext. i suggest u Don't run this on public Wi-Fi or untrusted networks without a VPN/SSH tunnel.
 
-## ⚠️ Legal Warning
+## Legal Warning
 
 **Use this tool only on systems you own or on which you have explicit permission to monitor.**
 - i don't take responsibility for anything you do with this
