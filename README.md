@@ -69,7 +69,7 @@ dotnet run
 
 **Use this tool only on systems you own or on which you have explicit permission to monitor.**
 - i don't take responsibility for anything you do with this
-- this is code that i did for my eae application 
+- this is code that i did for my eae application so i wouldn't trust this blindly if i were you
 ## licence 
 this is published under the mit licence 
 [licence](https://mit-license.org/)
